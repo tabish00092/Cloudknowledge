@@ -1,7 +1,7 @@
 FROM centos:latest
 MAINTAINER mohdtaish090@outlook.com
-RUN sudo install -y httpd \
- zip\
+RUN sudo apt-get install -y httpd \
+  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
 WORKDIR /var/www/html
